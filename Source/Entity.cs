@@ -8,6 +8,7 @@ namespace MinafaraECS
 {
     public class Entity
     {
+        public Entity? Parent = null;
         public string Name = "";
         private List<Entity> Children = [];
 

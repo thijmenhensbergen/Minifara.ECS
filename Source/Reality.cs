@@ -1,4 +1,7 @@
-﻿namespace MinafaraECS
+﻿
+
+
+namespace MinafaraECS
 {
     public class Reality
     {
