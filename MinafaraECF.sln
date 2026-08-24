@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinafaraECS", "MinafaraECS.csproj", "{7E322061-2C98-4233-8B37-65CD2E4C464A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinafaraECF", "MinafaraECF.csproj", "{7E322061-2C98-4233-8B37-65CD2E4C464A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

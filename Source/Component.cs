@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MinafaraECS
+namespace MinafaraECF
 {
     public abstract class Component
     {

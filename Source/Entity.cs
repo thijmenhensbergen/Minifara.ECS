@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MinafaraECS
+namespace MinafaraECF
 {
     public class Entity
     {
@@ -63,7 +63,7 @@ namespace MinafaraECS
             NewComponent.OnBegin();
         }
 
-        private void ProcessComponents(double DeltaTime)
+        public void ProcessComponents(double DeltaTime)
         {
             foreach (var component in Components)
             {

@@ -3,7 +3,7 @@
 
 using System.Diagnostics;
 
-namespace MinafaraECS
+namespace MinafaraECF
 {
     /// <summary>
     /// A Reality is where all the entities are stored
