@@ -8,14 +8,27 @@ namespace MinafaraECS
 {
     public class Entity
     {
-        public Entity? Parent = null;
+        public Entity? Parent;
+        public Reality? Reality;
         public string Name = "";
         private List<Entity> Children = [];
-
+        private List<Component> Components = [];
 
         public void AddChild(Entity Child)
         {
+            Child.Parent = this;
             Children.Add(Child);
+            foreach (var Component in Child.Components)
+            {
+                Component.OnBegin(); 
+            }
+        }
+        public void AddChildren(List<Entity> NewChildren)
+        {
+            foreach (var NewChild in NewChildren)
+            {
+                AddChild(NewChild);
+            }
         }
         public void RemoveChild(string EntityName)
         {
@@ -44,6 +57,22 @@ namespace MinafaraECS
 
             }
         }
+        public void AddComponent(Component NewComponent)
+        {
+            Components.Add(NewComponent);
+            NewComponent.OnBegin();
+        }
 
+        private void ProcessComponents(double DeltaTime)
+        {
+            foreach (var component in Components)
+            {
+                component.Process(DeltaTime);
+            }
+            foreach (var child in Children)
+            {
+                child.ProcessComponents(DeltaTime);
+            }
+        }
     }
 }

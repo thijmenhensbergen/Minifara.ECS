@@ -53,4 +53,6 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 *.vsidx
-MinafaraECS/.vs/MinafaraECS/v17/.suo
+/.vs
+/.vs/MinafaraECS
+.vs/MinafaraECS/v17/.suo

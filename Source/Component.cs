@@ -8,5 +8,7 @@ namespace MinafaraECS
 {
     public abstract class Component
     {
+        public virtual void OnBegin() { }
+        public virtual void Process(double DeltaTime) { }
     }
 }
