@@ -56,3 +56,4 @@ nunit-*.xml
 /.vs
 /.vs/MinafaraECS
 .vs/MinafaraECS/v17/.suo
+DocumentLayout.json
